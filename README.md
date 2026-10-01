@@ -7,7 +7,8 @@ A comprehensive human resources data project featuring programmatic data cleanin
 ## 🛠️ Tech Stack & Architecture
 
 1. **Data Engineering & Wrangling (Python):** Resolved structural anomalies, handled missing/corrupted primary keys, and performed vectorized logical cleaning using `pandas` and `numpy` in a Jupyter Notebook environment.
-2. **ETL & Data Modeling (Power Query & Power BI):** Engineered data type coercion, generated a continuous calendar dimension (`dcalendar`), built star-schema relationships, and constructed an interactive visual reporting layer.
+2. **ETL & Data Modeling (Power Query & Power BI):** Engineered data type coercion, connected and blended multiple data sources, established star-schema relationships, generated a dedicated calendar dimension (`dcalendar`), and constructed an interactive visual reporting layer.
+
 
 ## 📊 Dashboard Preview
 
@@ -26,8 +27,9 @@ The raw raw dataset (`hr_dirty_portfolio.csv`) was heavily corrupted with placeh
 * **Pipeline Export:** Persisted the newly cleaned state down to an optimized source asset named `hr_cleaned_portfolio.csv`.
 
 ### 2. Power BI & Power Query Phase
+* **Data Blending & Integration:** Imported and connected a secondary contextual data asset, merging information fields across the core tables to enable cohesive holistic analysis.
 * **Time-Intelligence Foundations:** Generated a contiguous calendar dimension table (`dcalendar`) to enable seamless chronological groupings.
-* **Granular Normalization:** Mapped active employment constraints (`active = "yes"/"no"`) and resolved date barriers to streamline analytical filtering.
+* **Schema Optimization:** Established relationship dimensions between facts, lookups, and calendars to build a robust data model and prevent calculation ambiguity.
 
 ## 🧮 DAX Measures Engineered
 
